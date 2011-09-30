@@ -1,0 +1,119 @@
+﻿<#@ template debug="false" hostspecific="false" language="CSharp" #>
+<#@ output extension="cs"  #>
+<#@ Assembly Name="System.Xml" #>
+<#@ Assembly Name="System.Data" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="SmartCodeGenerator.Uility" #>
+<#@ parameter name="ConnectionStr" type="SmartCodeGenerator.Parameter" #>
+<#@ parameter name="NameSpace" type="SmartCodeGenerator.Parameter" #>
+<#@ parameter name="TableName" type="SmartCodeGenerator.Parameter" #>
+
+//  Copyright © Hewlett-Packard Company. All Rights Reserved.
+// </copyright>
+<#
+CodeGenerateHelper cghelper = new  CodeGenerateHelper();
+SqlDBHelper sqlHelper = new SqlDBHelper();
+sqlHelper.SqlConnectionString = ConnectionStr.Value;
+DataTable dt = sqlHelper.GetTables("select * from [" + TableName.Value + "]");
+DataTable pkdt = sqlHelper.GetPKs(  TableName.Value );
+dt = cghelper.GetColumnsInfo(dt,pkdt);
+#>
+using System;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using <#=NameSpace.Value#>.Entities;
+using <#=NameSpace.Value#>.DataAccess;
+
+namespace <#=NameSpace.Value#>.BizLogic
+{
+	/// <summary> 
+	/// Class  <#=TableName.Value#>Logic
+	/// Generated DateTime   <#=DateTime.Now#>
+	/// </summary>
+	<Serializable()> _
+	public class <#=TableName.Value#>Logic
+	{
+		 private static <#=TableName.Value#>Access dal = new <#=TableName.Value#>Access();
+<#
+ 
+  StringBuilder pkConditionStr = new StringBuilder();		  
+  StringBuilder pkValueStr = new StringBuilder();
+
+  StringBuilder allConditionStr = new StringBuilder();		  
+  StringBuilder allValueStr = new StringBuilder();
+
+  for(int i = 0; i < dt.Rows.Count; i++)
+  {
+      if(dt.Rows[i]["IsPK"].ToString() == "Y")
+	  {
+		  if(pkConditionStr.Length >0)
+		  {
+				pkConditionStr.Append(","+cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower() );
+				pkValueStr.Append("," +dt.Rows[i]["ColumnName"].ToString().ToLower() );
+		  }
+		  else
+		  {
+			    pkConditionStr.Append(cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower());
+				pkValueStr.Append( dt.Rows[i]["ColumnName"].ToString().ToLower());
+		  }
+	  }		
+	  if(allConditionStr.Length >0)
+	  {
+		  allConditionStr.Append(","+cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower() );
+		  allValueStr.Append("," +dt.Rows[i]["ColumnName"].ToString().ToLower() );
+	  }
+	  else
+	  {
+		  allConditionStr.Append(cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower());
+		  allValueStr.Append( dt.Rows[i]["ColumnName"].ToString().ToLower());
+	   }  
+  }
+  if(pkConditionStr.Length>0)
+  {
+#>
+		///<summary>
+		/// Exists
+		///</summary>
+		Public bool Exists(<#=pkConditionStr.ToString()#>)
+		{ 
+			Return dal.Exists(<#=pkValueStr.ToString()#>);
+		}
+
+		///<summary>
+		/// Get Entity
+		///</summary>
+		Public <#=TableName.Value#> GetModel(<#=pkConditionStr.ToString()#>)
+		{
+			 Return dal.GetModel(<#=pkValueStr.ToString()#>);
+		}
+<#
+  }
+#>
+		///<summary>
+		/// Add
+		///</summary>
+		Public bool Insert(<#=TableName.Value#> model)
+		{
+			 Return dal.Insert(model);        
+		}
+
+		///<summary>
+		/// Update
+		///</summary>
+		Public bool Update(<#=TableName.Value#> model)
+		{
+			 Return dal.Update(model);   
+		}
+
+		///<summary>
+		/// Populate
+		///</summary>
+		Public DataSet Populate(<#=allConditionStr #> ,int currPageNum,int pageSize,string sortField,string sortDirection)
+		{
+			Return dal.Populate(<#=allValueStr #>,currPageNum,pageSize,sortField,sortDirection);  		
+		}
+	}
+}

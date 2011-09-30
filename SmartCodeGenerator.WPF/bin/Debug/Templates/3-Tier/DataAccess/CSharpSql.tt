@@ -1,0 +1,282 @@
+<#@ template debug="false" hostspecific="false" language="CSharp" #>
+<#@ output extension="cs"  #>
+<#@ Assembly Name="System.Xml" #>
+<#@ Assembly Name="System.Data" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="SmartCodeGenerator.Uility" #>
+<#@ parameter name="ConnectionStr" type="SmartCodeGenerator.Parameter" #>
+<#@ parameter name="NameSpace" type="SmartCodeGenerator.Parameter" #>
+<#@ parameter name="TableName" type="SmartCodeGenerator.Parameter" #>
+
+//  Copyright © Hewlett-Packard Company. All Rights Reserved.
+// </copyright>
+<#
+CodeGenerateHelper cghelper = new  CodeGenerateHelper();
+SqlDBHelper sqlHelper = new SqlDBHelper();
+sqlHelper.SqlConnectionString = ConnectionStr.Value;
+DataTable dt = sqlHelper.GetTables("select * from [" + TableName.Value + "]");
+DataTable pkdt = sqlHelper.GetPKs(  TableName.Value );
+dt = cghelper.GetColumnsInfo(dt,pkdt);
+#>
+using System;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using <#=NameSpace.Value#>.Entities;
+namespace <#=NameSpace.Value#>.DataAccess
+{
+	/// <summary> 
+	/// Class  <#=TableName.Value#>Access
+	/// Generated DateTime   <#=DateTime.Now#>
+	/// </summary>
+	<Serializable()> _
+	public class  <#=TableName.Value#>Access
+	{
+<#
+  StringBuilder pkwSqlStr = new StringBuilder();
+  StringBuilder pkConditionStr = new StringBuilder();		  
+  StringBuilder pkParameterStr = new StringBuilder();
+  StringBuilder pkParameterValueStr = new StringBuilder();
+  StringBuilder allwSqlStr = new StringBuilder();
+  StringBuilder allConditionStr = new StringBuilder();
+  StringBuilder allParameterStr = new StringBuilder();
+  StringBuilder allParameterValueStr = new StringBuilder();
+  for(int i = 0; i < dt.Rows.Count; i++)
+  {
+      if(dt.Rows[i]["IsPK"].ToString() == "Y")
+	  {
+		  if(pkConditionStr.Length >0)
+		  {
+				pkConditionStr.Append(","+cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower() );
+		  }
+		  else
+		  {
+			    pkConditionStr.Append(cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower());
+		  }
+		  if(pkwSqlStr.Length >0)
+		  {
+				pkwSqlStr.Append(" and "+ dt.Rows[i]["ColumnName"].ToString() +"=@"+dt.Rows[i]["ColumnName"].ToString());
+		  }
+		  else
+		  {
+				pkwSqlStr.Append(" " + dt.Rows[i]["ColumnName"].ToString() +"=@"+dt.Rows[i]["ColumnName"].ToString());
+		  }
+		  if(pkParameterStr.Length >0)
+		  {
+				pkParameterStr.Append(",new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+		  }
+		  else
+		  {
+				pkParameterStr.Append("new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+		  }
+		  pkParameterValueStr.Append("  parameters["+i.ToString()+"].Value =" + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+	  }	
+	  if(allwSqlStr.Length >0)
+	  {
+		  allwSqlStr.Append(" and "+ dt.Rows[i]["ColumnName"].ToString() +"=@"+dt.Rows[i]["ColumnName"].ToString());
+	  }
+	  else
+	  {
+		  allwSqlStr.Append(" " + dt.Rows[i]["ColumnName"].ToString() +"=@"+dt.Rows[i]["ColumnName"].ToString());
+	  }			  		  
+	  if(allConditionStr.Length >0)
+	  {
+			allConditionStr.Append(","+cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower() );
+	  }
+	  else
+	  {
+		    allConditionStr.Append(cghelper.conver(dt.Rows[i]["DataTypeName"].ToString()) +" "+dt.Rows[i]["ColumnName"].ToString().ToLower());			  
+	  }
+	  if(allParameterStr.Length >0)
+	  {
+		    allParameterStr.Append(","+Environment.NewLine+"				     new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+	   }
+	   else
+	   {
+		     allParameterStr.Append("new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+	   }
+	   if(allParameterStr.Length >0)
+	   {
+			allParameterValueStr.Append("			parameters["+i.ToString()+"].Value =" + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+	   }
+	   else
+	   {
+			allParameterValueStr.Append("parameters["+i.ToString()+"].Value =" + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+	   }
+  }
+  if(pkConditionStr.Length>0)
+  {
+#>
+		///<summary>
+		/// Exists
+		///</summary>
+		Public bool Exists(<#=pkConditionStr.ToString()#>)
+		{
+			string strSql =" select count(1) from <#=TableName.Value #> where <#=pkwSqlStr.ToString()#> ";
+			SqlParameter[] parameters = { <#=pkParameterStr.ToString()#> };
+			<#=pkParameterValueStr.ToString()#>
+			Return SqlDbHelper.Exists(strSql, parameters);
+		}
+
+		///<summary>
+		/// Get Entity
+		///</summary>
+		Public <#=TableName.Value#> GetModel(<#=pkConditionStr.ToString()#>)
+		{
+			SqlParameter[] parameters = { <#=pkParameterStr.ToString()#> };
+			<#=pkParameterValueStr.ToString()#>
+			
+			<#=TableName.Value#> model = new <#=TableName.Value#>();
+			DataSet ds = SqlDbHelper.RunProcedure("sp_Get<#=TableName.Value#>",parameters,"ds");        
+			if(ds.Tables[0].Rows.Count > 0)
+			{
+<#
+  for(int i = 0; i < dt.Rows.Count; i++)
+  {
+	   string typeStr = cghelper.conver(dt.Rows[i]["DataTypeName"].ToString());
+       if(typeStr == "DateTime")
+       { 						
+#>
+				if(ds.Tables[0].Rows[0]["<#=dt.Rows[i]["ColumnName"].ToString()#>"] != null)
+				{
+					model.<#=dt.Rows[i]["ColumnName"].ToString()#>=DateTime.Parse(ds.Tables[0].Rows[0][dt.Rows[i]["ColumnName"].ToString()].ToString());
+				}
+<#
+		}
+		else
+		{
+#>
+				model.<#=dt.Rows[i]["ColumnName"].ToString()#>=ds.Tables[0].Rows[0][dt.Rows[i]["ColumnName"].ToString()].ToString();
+<#						
+		}
+   }
+#>				
+			}
+			return model;
+		}
+
+		///<summary>
+		/// Delete
+		///</summary>
+		Public bool Delete(<#=pkConditionStr.ToString()#>)
+		{
+			int rowsAffected;
+			string strSql ="delete from <#=TableName.Value#>  where <#=pkwSqlStr.ToString()#> ";
+			SqlParameter[] parameters = { <#=pkParameterStr.ToString()#> };
+			<#=pkParameterValueStr.ToString()#>
+			SqlDbHelper.RunProcedure("sp_Delete<#=TableName.Value#>",parameters,rowsAffected);  
+			if(rowsAffected > 0)
+			{
+				return True;
+			}
+			else
+			{
+				return False;
+			}  
+		}
+<#
+  }
+#>
+		///<summary>
+		/// Add
+		///</summary>
+		Public bool Insert(<#=TableName.Value#> model)
+		{
+			int rowsAffected;
+<#
+	StringBuilder insertParameterStr = new StringBuilder();
+    StringBuilder insertParameterValueStr = new StringBuilder();	
+	for(int i = 0; i < dt.Rows.Count; i++)
+	{			
+		if(insertParameterStr.Length >0)
+		{
+				insertParameterStr.Append(","+Environment.NewLine+"				     new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+		}
+		else
+		{
+				insertParameterStr.Append("new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+		}
+		
+		if(insertParameterValueStr.Length >0)
+		{
+			insertParameterValueStr.Append("			parameters["+i.ToString()+"].Value = model." + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+		}
+		else
+		{
+		    insertParameterValueStr.Append("parameters["+i.ToString()+"].Value = model." + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+		}
+	} 
+#> 
+			SqlParameter[] parameters = { <#=insertParameterStr.ToString()#> }
+			<#=insertParameterValueStr.ToString()#>
+			SqlDbHelper.RunProcedure("sp_Insert<#=TableName.Value#>",parameters,rowsAffected);  
+			if(rowsAffected == 1)
+			{
+				return True;
+			}
+			else
+			{
+				return False;
+			}             
+		}
+
+		///<summary>
+		/// Update
+		///</summary>
+		Public bool Update(<#=TableName.Value#> model)
+		{
+			int rowsAffected;
+<# 
+	StringBuilder updateParameterStr = new StringBuilder();
+    StringBuilder updateParameterValueStr = new StringBuilder();	
+	for(int i = 0; i < dt.Rows.Count; i++)
+	{	 
+
+
+		if(updateParameterStr.Length >0)
+		{
+				updateParameterStr.Append(","+Environment.NewLine+"				     new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+		}
+		else
+		{
+				updateParameterStr.Append("new SqlParameter("+"\"@"+ dt.Rows[i]["ColumnName"].ToString() +"\",SqlDbType."+dt.Rows[i]["DataTypeName"].ToString()+","+dt.Rows[i]["ColumnSize"].ToString()+")");
+		}
+		
+		if(updateParameterValueStr.Length >0)
+		{
+			updateParameterValueStr.Append("			parameters["+i.ToString()+"].Value = model." + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+		}
+		else
+		{
+		    updateParameterValueStr.Append("parameters["+i.ToString()+"].Value = model." + dt.Rows[i]["ColumnName"].ToString().ToLower() +";"+Environment.NewLine);
+		}
+	}
+  
+#> 
+			SqlParameter[] parameters = { <#=updateParameterStr.ToString()#> };
+			<#=updateParameterValueStr.ToString()#>
+			SqlDbHelper.RunProcedure("sp_Update<#=TableName.Value#>",parameters,rowsAffected);    
+			if(rowsAffected == 1)
+			{
+				return True;
+			}
+			else
+			{
+				return False;
+			}
+		}
+
+		///<summary>
+		/// Populate
+		///</summary>
+		Public DataSet Populate(<#=allConditionStr #> ,int currPageNum,int pageSize,string sortField,string sortDirection)
+		{
+			string strSql =" select * from <#=TableName.Value #> where <#=allwSqlStr.ToString()#> ";
+			SqlParameter[] parameters = { <#=allParameterStr.ToString()#> }
+			<#=allParameterValueStr.ToString()#>			 
+			return SqlDbHelper.RunProcedure("sp_Populate<#=TableName.Value#>",parameters,"ds");			
+		}
+	}
+}

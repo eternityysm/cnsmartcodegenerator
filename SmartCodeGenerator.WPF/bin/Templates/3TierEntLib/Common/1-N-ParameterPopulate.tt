@@ -1,0 +1,37 @@
+﻿<#@ template debug="false" hostspecific="false" language="CSharp" #>
+<#@ output extension="cs"  #>
+<#@ Assembly Name="System.Xml" #>
+<#@ Assembly Name="System.Data" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="SmartCodeGenerator.Uility" #> 
+<#@ parameter name="NameSpace" type="SmartCodeGenerator.Parameter" #> 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+
+namespace <#=NameSpace.Value#>.Common
+{
+        public class ParameterPopulate
+        {
+			public string ParName
+			{
+				get;
+				set;
+			}
+			public DbType ParDbType
+			{
+				get;
+				set;
+			}
+			public object ParValue
+			{
+				get;
+				set;
+			}
+        }
+}

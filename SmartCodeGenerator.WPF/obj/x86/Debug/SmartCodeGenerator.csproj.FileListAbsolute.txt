@@ -1,0 +1,125 @@
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.exe.config
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.exe
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.pdb
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.exe
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.pdb
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\AvalonDock.dll
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\AvalonDock.pdb
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\de\AvalonDock.resources.dll
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\bin\Debug\it-IT\AvalonDock.resources.dll
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucBaseDocument.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winConnector.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winOpenFolder.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\App.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucBaseDocument.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucParameterExplorer.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucServerExplorer.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucSolutionExplorer.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucTemplatesExplorer.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winConnector.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winMain.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winOpenFolder.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\App.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator_MarkupCompile.cache
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator_MarkupCompile.lref
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucParameterExplorer.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucServerExplorer.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucSolutionExplorer.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\ucTemplatesExplorer.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winMain.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.g.resources
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.Properties.Resources.resources
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winBatchGenerator.g.cs
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winBatchGenerator.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winAboutSmartCodeGenerator.baml
+C:\PersonalFolder\Tech\CodeGenerator\SmartCodeGenerator-WPF\SmartCodeGenerator.WPF\obj\x86\Debug\winAboutSmartCodeGenerator.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.exe.config
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.exe
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.pdb
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.exe
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.pdb
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\AvalonDock.pdb
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\de\AvalonDock.resources.dll
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\it-IT\AvalonDock.resources.dll
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucBaseDocument.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winAboutSmartCodeGenerator.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winConnector.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winOpenFolder.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\App.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucBaseDocument.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucParameterExplorer.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucServerExplorer.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucSolutionExplorer.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucTemplatesExplorer.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winAboutSmartCodeGenerator.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winBatchGenerator.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winConnector.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winMain.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winOpenFolder.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\App.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator_MarkupCompile.cache
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator_MarkupCompile.lref
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucParameterExplorer.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucServerExplorer.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucSolutionExplorer.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucTemplatesExplorer.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winBatchGenerator.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winMain.baml
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.g.resources
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.Properties.Resources.resources
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\fanxianj\Tech Space\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.exe.config
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.exe
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.pdb
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.exe
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\SmartCodeGenerator.pdb
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucBaseDocument.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winAboutSmartCodeGenerator.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winConnector.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winOpenFolder.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\App.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucBaseDocument.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucParameterExplorer.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucServerExplorer.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucSolutionExplorer.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucTemplatesExplorer.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winAboutSmartCodeGenerator.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winBatchGenerator.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winConnector.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winMain.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winOpenFolder.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\App.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator_MarkupCompile.cache
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator_MarkupCompile.lref
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucParameterExplorer.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucServerExplorer.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucSolutionExplorer.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\ucTemplatesExplorer.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winBatchGenerator.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winMain.baml
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.g.resources
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\SmartCodeGenerator.Properties.Resources.resources
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winProjTemplateGenerator.g.cs
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Debug\winProjTemplateGenerator.baml
