@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\obj\x86\Release\
+C:\Users\fanxianj\TechSpace\CodePlex\SmartCodeGenerator\SourceCodes\SmartCodeGenerator.WPF\obj\x86\Release\
 SmartCodeGenerator
 none
 false
 TRACE
-C:\Users\fanxianj\TechSpace\SmartCodeGenerator\SmartCodeGenerator.WPF\App.xaml
+C:\Users\fanxianj\TechSpace\CodePlex\SmartCodeGenerator\SourceCodes\SmartCodeGenerator.WPF\App.xaml
 12982842462
 
 291327044678
-23-1316235726
+23-376318878
 ucBaseDocument.xaml;ucParameterExplorer.xaml;ucServerExplorer.xaml;ucSolutionExplorer.xaml;ucTemplatesExplorer.xaml;winAboutSmartCodeGenerator.xaml;winBatchGenerator.xaml;winConnector.xaml;winExcelToScript.xaml;winMain.xaml;winOpenFolder.xaml;winProjTemplateGenerator.xaml;
 
 False
